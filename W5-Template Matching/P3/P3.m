@@ -1,8 +1,8 @@
 im = imread('go1.jpg');
 grIm = rgb2gray(im);
 
+%Tamplate
 template = imcrop(grIm);
-
 th = 0.60;
 
 figure(1)
@@ -15,7 +15,7 @@ bw = norC > th;
  
 %r = regionprops(bwlabel(bw));
 
-% show the resuts
+% show the resuts in figure 2
 figure(2)
 
 subplot(221)

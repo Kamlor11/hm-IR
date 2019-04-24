@@ -14,15 +14,15 @@ filBuG = imgaussfilt(imBu, 1);
 % gaussFilter = exp(-x .^ 2 / (2 * sigma ^ 2));
 % gaussFilter = gaussFilter / sum (gaussFilter); % normalize
 
-
 %filBuG = fspecial('gaussian',hsize,sigma);
 I1 = imnoise(imBo,'gaussian',0, (1/256)^2);
 I2 = imnoise(imBu,'gaussian',0, (1/256)^2);
 
 %Laplacian-based
+%TODO
 
 %Laplacian of Gaussian
-
+%TODO
 
 %class
 % im2 = imcrop();
@@ -74,13 +74,9 @@ subplot(221)
 imshow(imNew)
 title('Origin image New york');
 
-
-
 subplot(222)
 imshow(grNew)
 title('Gray image New york');
-
-
 
 subplot(223)
 imshow(prNew)
@@ -89,7 +85,6 @@ title('Prewitt-Filter image New york');
 subplot(224)
 imshow(slNew)
 title('Sobel-Filter image New york');
-
 
 % Figure 3
 figure(3)

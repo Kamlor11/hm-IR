@@ -1,6 +1,5 @@
 % sample code for project 1
-
-im1 = imread('myfamily.jpg'); % use your image
+im1 = imread('im2.jpg'); % use your image
 imshow(im1)
 
 % convert image to a gray one
