@@ -4,7 +4,16 @@ imshow(im1)
 
 % convert image to a gray one
 grIm1 = rgb2gray(im1);
+
+figure(1)
+
+subplot(211)
+imshow(im1)
+title('Origin image');
+
+subplot(212)
 imshow(grIm1)
+title('Gray image');
 
 %find the max intensity value in the gray image and their corresponding
 %coordinates

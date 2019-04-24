@@ -1,7 +1,11 @@
+im = imread('go1.jpg');
+grIm = rgb2gray(im);
+
 % perform template matching 
 th = 0.60;
+temp = imcrop(grIm);
 
-out = normxcorr2(temp, im);
+out = normxcorr2(temp, grIm);
 figure(1), imshow(out,[])
 
 [m,n] = size(temp);

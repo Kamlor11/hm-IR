@@ -3,7 +3,7 @@ grIm = rgb2gray(im);
 
 %Tamplate
 template = imcrop(grIm);
-th = 0.60;
+th = 0.65;
 
 figure(1)
 % select the tmaplate
